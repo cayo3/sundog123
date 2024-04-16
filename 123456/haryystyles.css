@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+.profile-image{
+    position: relative;
+    
+}
+img{
+    position: absolute;
+    top: -850px;
+    right: 120px;
+    width: 50;
+    height: 250px;
+    border: 3px solid;
+    border-color: #001122;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 25px;
+}
+.bodyp{
+    font-family: 'Poppins', sans-serif;
+    padding: 100px;
+    margin-top: -150px;
+    min-height: 100vh;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.bodyp a{
+    text-decoration: none;
+    color: black;
+}
+.bodyp a:hover{
+    border: 1px solid;
+    border-color: #001122;
+    background-color: #001122;
+    border-radius: 5px;
+    color: aliceblue;
+    transition: 0.5s;
+}
+.bodyhead{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    place-items: left;
+    align-content: center;
+    padding: 50px;
+    padding-top: 200px;
+    padding-left: 100px;
+    
+}
+.bodyhead h1{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0%;
+    font-weight: bolder;
+    font-size: 80px;
+    color: #073f78;
+}
+.bodyhead h2{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0%;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+.servicesheader{
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+.services-cards{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    min-height: 30vh;
+
+}
+.services-card:hover{
+    transform: translateY(-20px);
+    background-color: #001122;
+    color: aliceblue;
+
+
+}
+.services-card{
+    width: 300px;
+    height: 40;
+    border-radius: 10px;
+    border: 1px solid #001122;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+.services-card i{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.services-2nd{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+    padding-top: 200px;
+    width: 350px;
+    border: 1px solid #001122;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s ease;
+    font-size: medium;
+
+}
+.services-2nd:hover{
+    transform: translateY(-20px);
+    background-color: #001122;
+    color: aliceblue;
+}
+
+@media screen and (max-width:768px){
+    .services-cards{ 
+        flex-direction: column;
+        align-items: center;
+    }
+    }
+.bodyhead i{
+    font-size: 30px;
+    position: absolute;
+    top: 370px;
+    left: 740px;
+}
+.bodyp i{
+    color: #001122;
+    font-size: 50px;
+    position: absolute;
+    top: 550px;
+    left: 650px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bodyp i:hover{
+    background-color: #001122;
+    color: aliceblue;
+    transition: 0.3s;
+    transform: translateY(20px);
+}
+section .animate{
+    transition: 2s;
+    opacity: 0;
+    filter: blur(5px);
+}
+section .animate{
+    opacity: 1;
+    filter: blur(0);
+}
+.sec1 .animate{
+    transform: translateX(-100%);
+}
+.sec1.show-animate .animate{
+    transform: translateX(0);
+}
+.sec2 .animate{
+    transform: translateX(100%);
+}
+.sec2.show-animate .animate{
+    transform: translateX(0);
+}
+body{
+    aspect-ratio: 900/900;
+    background-image: url('./img/bg123.svg');
+    background-position: cover;
+    background-repeat:repeat-y;
+    background-size: cover;
+
+} 
+.conacts{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 150px;
+    bottom: 90px;
+}
+.conacts a{
+    font-size: 35px;
+    color: #001122;
+    margin-left: 20px;
+}
+.conacts i:hover{
+    transform: scale(2);
+    transition: 0.3s;
+
+}
